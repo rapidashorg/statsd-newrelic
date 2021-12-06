@@ -126,12 +126,12 @@ class StatsClientBase(object):
         if tags:
             tag_string = ','.join(
                 self._build_tag(k, v) for k, v in tags.items())
-            return '{},{}:{}'.format(stat, tag_string, value)
+            value = '{}|#{}'.format(value, tag_string)
         return '{}:{}'.format(stat, value)
 
     def _build_tag(self, tag, value):
         if value:
-            return '{}={}'.format(str(tag), str(value))
+            return '{}:{}'.format(str(tag), str(value))
         else:
             return tag
 

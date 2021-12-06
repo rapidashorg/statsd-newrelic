@@ -4,13 +4,12 @@ from setuptools import find_packages, setup
 
 
 setup(
-    name='statsd-telegraf',
+    name='statsd-newrelic',
     version='3.2.1-1',
-    description='A fork of pystatsd package with Telegraf-compatible tag support.',
+    description='A fork of pystatsd package with New Relic-compatible tag support.',
     long_description=open('README.rst').read(),
-    author='Bernardas Ališauskas',
-    author_email='bernardas.alisauskas@gmail.com',
-    url='https://github.com/Granitosaurus/statsd-telegraf',
+    author='rapidahsorg',
+    url='https://github.com/rapidashorg/statsd-newrelic',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
